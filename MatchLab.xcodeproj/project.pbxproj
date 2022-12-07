@@ -11,8 +11,8 @@
 		DCA9B456291BC1DA00083DCA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9B455291BC1DA00083DCA /* SceneDelegate.swift */; };
 		DCA9B45B291BC1DA00083DCA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA9B459291BC1DA00083DCA /* Main.storyboard */; };
 		DCA9B45D291BC1DB00083DCA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DCA9B45C291BC1DB00083DCA /* Assets.xcassets */; };
-		DCA9B460291BC1DB00083DCA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DCA9B45E291BC1DB00083DCA /* LaunchScreen.storyboard */; };
 		DCA9B469291C06F400083DCA /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DCA9B468291C06F400083DCA /* FeedViewController.swift */; };
+		F3961258292E1F8D003C1A4C /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3961257292E1F8D003C1A4C /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -21,9 +21,9 @@
 		DCA9B455291BC1DA00083DCA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		DCA9B45A291BC1DA00083DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		DCA9B45C291BC1DB00083DCA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		DCA9B45F291BC1DB00083DCA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		DCA9B461291BC1DB00083DCA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		DCA9B468291C06F400083DCA /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		F3961257292E1F8D003C1A4C /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +56,47 @@
 		DCA9B452291BC1DA00083DCA /* MatchLab */ = {
 			isa = PBXGroup;
 			children = (
+				F3EAAF36292E7AE100EFF8C0 /* App */,
+				F3EAAF35292E7AAF00EFF8C0 /* Matches */,
+				F3EAAF33292E7A6B00EFF8C0 /* Ressources */,
+				DCA9B461291BC1DB00083DCA /* Info.plist */,
+				F3EAAF34292E7A9300EFF8C0 /* Feed */,
+			);
+			path = MatchLab;
+			sourceTree = "<group>";
+		};
+		F3EAAF33292E7A6B00EFF8C0 /* Ressources */ = {
+			isa = PBXGroup;
+			children = (
+				DCA9B468291C06F400083DCA /* FeedViewController.swift */,
+				F3961257292E1F8D003C1A4C /* LaunchScreen.storyboard */,
+				DCA9B45C291BC1DB00083DCA /* Assets.xcassets */,
+			);
+			path = Ressources;
+			sourceTree = "<group>";
+		};
+		F3EAAF34292E7A9300EFF8C0 /* Feed */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Feed;
+			sourceTree = "<group>";
+		};
+		F3EAAF35292E7AAF00EFF8C0 /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		F3EAAF36292E7AE100EFF8C0 /* App */ = {
+			isa = PBXGroup;
+			children = (
 				DCA9B453291BC1DA00083DCA /* AppDelegate.swift */,
 				DCA9B455291BC1DA00083DCA /* SceneDelegate.swift */,
 				DCA9B459291BC1DA00083DCA /* Main.storyboard */,
-				DCA9B468291C06F400083DCA /* FeedViewController.swift */,
-				DCA9B45C291BC1DB00083DCA /* Assets.xcassets */,
-				DCA9B45E291BC1DB00083DCA /* LaunchScreen.storyboard */,
-				DCA9B461291BC1DB00083DCA /* Info.plist */,
 			);
-			path = MatchLab;
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -126,8 +158,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DCA9B460291BC1DB00083DCA /* LaunchScreen.storyboard in Resources */,
 				DCA9B45D291BC1DB00083DCA /* Assets.xcassets in Resources */,
+				F3961258292E1F8D003C1A4C /* LaunchScreen.storyboard in Resources */,
 				DCA9B45B291BC1DA00083DCA /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -175,14 +207,6 @@
 				DCA9B45A291BC1DA00083DCA /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		DCA9B45E291BC1DB00083DCA /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				DCA9B45F291BC1DB00083DCA /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -309,9 +333,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85Y7A7HSKG;
+				DEVELOPMENT_TEAM = 2FW8T4UX4L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MatchLab/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -322,7 +347,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saschasalles.matchlab.MatchLab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxlestage.matchlab.MatchLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
@@ -340,9 +365,10 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 85Y7A7HSKG;
+				DEVELOPMENT_TEAM = 2FW8T4UX4L;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = MatchLab/Info.plist;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.education";
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
@@ -353,7 +379,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.saschasalles.matchlab.MatchLab;
+				PRODUCT_BUNDLE_IDENTIFIER = com.maxlestage.matchlab.MatchLab;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
 				SUPPORTS_MACCATALYST = NO;
