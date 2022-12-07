@@ -9,6 +9,11 @@ import UIKit
 
 final class FeedViewController: UIViewController {
 
+
+    // MARK: - UI Properties
+
+    private var profiles = Profile.all
+
     // MARK: - UI Attributes
 
     @IBOutlet private weak var imageView: UIImageView!
@@ -65,6 +70,6 @@ final class FeedViewController: UIViewController {
         titleLabel.text = "Gatien"
         descriptionLabel.text = "Gatien va payer sa tournée ce soir"
 
-
     }
+    
 }
